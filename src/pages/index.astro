@@ -1,0 +1,25 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import Services from '@/components/Services';
+import Process from '@/components/Process';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout title="Jimbo's Exterior Cleaning - Ayrshire" canonical="/">
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <Header client:load />
+    <Hero client:load />
+    <Services client:load />
+    <Process client:load />
+    <Contact client:load />
+    <Footer client:load />
+  </TooltipProvider>
+</Layout>

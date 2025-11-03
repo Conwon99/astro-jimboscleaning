@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import DrivewayCleaningContent from './DrivewayCleaning';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Driveway Cleaning in Ayrshire | Jimbo's Exterior Cleaning"
+  description="Professional driveway cleaning services to restore the look of your property's entrance in Ayrshire and outer Glasgow."
+  canonical="/services/driveway-cleaning"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <DrivewayCleaningContent client:load />
+  </TooltipProvider>
+</Layout>
+
+

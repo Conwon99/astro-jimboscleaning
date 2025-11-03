@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import RoofSteamCleaningContent from './RoofSteamCleaning';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Roof Steam Cleaning in Ayrshire | Jimbo's Exterior Cleaning"
+  description="Professional roof steam cleaning services to remove moss, algae, and dirt from your roof tiles. Safe, effective, and environmentally friendly."
+  canonical="/services/roof-steam-cleaning"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <RoofSteamCleaningContent client:load />
+  </TooltipProvider>
+</Layout>
+
+

@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import IrvineContent from './Irvine';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Exterior Cleaning in Irvine, Ayrshire | Jimbo's Exterior Cleaning"
+  description="Professional exterior cleaning services in Irvine, Ayrshire. Expert cleaning for homes and businesses."
+  canonical="/locations/irvine"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <IrvineContent client:load />
+  </TooltipProvider>
+</Layout>
+
+

@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import PrestwickContent from './Prestwick';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Exterior Cleaning in Prestwick, Ayrshire | Jimbo's Exterior Cleaning"
+  description="Professional exterior cleaning services in Prestwick, Ayrshire. Expert cleaning for coastal properties."
+  canonical="/locations/prestwick"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <PrestwickContent client:load />
+  </TooltipProvider>
+</Layout>
+
+

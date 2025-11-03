@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import PVCWhiteCleaningContent from './PVCWhiteCleaning';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="PVC White Cleaning in Ayrshire | Jimbo's Exterior Cleaning"
+  description="Restore the shine to your PVC fascias, soffits, and gutters with our specialist cleaning."
+  canonical="/services/pvc-white-cleaning"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <PVCWhiteCleaningContent client:load />
+  </TooltipProvider>
+</Layout>
+
+

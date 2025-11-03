@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import RenderSoftwashingContent from './RenderSoftwashing';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Render Softwashing in Ayrshire | Jimbo's Exterior Cleaning"
+  description="Gentle softwashing for render surfaces, removing stains and organic growth without damage."
+  canonical="/services/render-softwashing"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <RenderSoftwashingContent client:load />
+  </TooltipProvider>
+</Layout>
+
+

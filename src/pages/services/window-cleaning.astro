@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import WindowCleaningContent from './WindowCleaning';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Window Cleaning in Ayrshire | Jimbo's Exterior Cleaning"
+  description="Streak-free window cleaning for sparkling results every time across Ayrshire."
+  canonical="/services/window-cleaning"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <WindowCleaningContent client:load />
+  </TooltipProvider>
+</Layout>
+
+

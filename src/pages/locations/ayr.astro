@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import AyrContent from './Ayr';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Exterior Cleaning in Ayr, Ayrshire | Jimbo's Exterior Cleaning"
+  description="Professional exterior cleaning services in Ayr, Ayrshire. Serving the historic county town with expert cleaning solutions."
+  canonical="/locations/ayr"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <AyrContent client:load />
+  </TooltipProvider>
+</Layout>
+
+

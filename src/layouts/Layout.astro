@@ -1,0 +1,175 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  image?: string;
+}
+
+const {
+  title = "Jimbo's Exterior Cleaning - Ayrshire",
+  description = "Expert exterior cleaning services in Ayrshire: roof steam cleaning, render softwashing, driveway, gutter, PVC, and window cleaning.",
+  canonical = "https://jimboscleaning.co.uk/",
+  image = "/lovable-uploads/logo.webp",
+} = Astro.props;
+
+const fullCanonical = canonical.startsWith('http') ? canonical : `https://jimboscleaning.co.uk${canonical}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Jimbo's Exterior Cleaning" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={fullCanonical} />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="geo.region" content="GB" />
+    <meta name="geo.placename" content="Ayrshire, Scotland" />
+    <meta name="geo.position" content="55.4620;-4.6299" />
+    <meta name="ICBM" content="55.4620, -4.6299" />
+    
+    <!-- Performance and Security Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#526bb0" />
+    <meta name="msapplication-TileColor" content="#526bb0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Jimbo's Exterior Cleaning" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:type" content="image/webp" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@JimbosExteriorCleaning" />
+    <meta name="twitter:image" content={image} />
+    
+    <link rel="icon" type="image/webp" href="/lovable-uploads/logo.webp" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script is:inline src="https://www.googletagmanager.com/gtag/js?id=G-YMJS781CJF"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YMJS781CJF');
+    </script>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Jimbo's Exterior Cleaning",
+      "description": "Expert exterior cleaning services in Ayrshire: roof steam cleaning, render softwashing, driveway, gutter, PVC, and window cleaning.",
+      "url": "https://jimboscleaning.co.uk",
+      "telephone": "+447919270128",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2 West Bowhouse Way",
+        "addressLocality": "Irvine",
+        "addressRegion": "Ayrshire",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 55.4620,
+        "longitude": -4.6299
+      },
+      "openingHours": [
+        "Mo-Fr 08:00-18:00",
+        "Sa 09:00-16:00"
+      ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 55.4620,
+          "longitude": -4.6299
+        },
+        "geoRadius": "50000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Exterior Cleaning Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roof Steam Cleaning",
+              "description": "Safe and effective steam cleaning to remove moss, algae, and dirt from roof tiles."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Render Softwashing",
+              "description": "Gentle softwashing for render surfaces, removing stains and organic growth without damage."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Driveway Cleaning",
+              "description": "Professional driveway cleaning to restore the look of your property's entrance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gutter Cleaning",
+              "description": "Thorough gutter cleaning to keep your drainage systems clear and functional."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "PVC White Cleaning",
+              "description": "Restore the shine to your PVC fascias, soffits, and gutters with our specialist cleaning."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Window Cleaning",
+              "description": "Streak-free window cleaning for sparkling results every time."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @import '../index.css';
+</style>
+
+
