@@ -1,0 +1,30 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import ContactForm from '@/components/ContactForm';
+import ContactDetails from '@/components/ContactDetails';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Contact Us | Get a Free Quote | Jimbo's Exterior Cleaning"
+  description="Contact Jimbo's Exterior Cleaning for a free quote on exterior cleaning services in Ayrshire. Professional roof cleaning, softwashing, driveway cleaning, and more."
+  canonical="/contact"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <Header client:load />
+    
+    <main>
+      <ContactForm client:load />
+      <ContactDetails client:load />
+    </main>
+    
+    <Footer client:load />
+  </TooltipProvider>
+</Layout>
+

@@ -14,14 +14,7 @@ const RoofSteamCleaning = () => {
   };
 
   const handleGetQuote = () => {
-    window.location.href = '/#contact';
-    // Small delay to ensure the page has loaded before scrolling
-    setTimeout(() => {
-      const contactElement = document.getElementById('contact');
-      if (contactElement) {
-        contactElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    window.location.href = '/contact';
   };
 
   const handleOurProcess = () => {
@@ -76,8 +69,9 @@ const RoofSteamCleaning = () => {
               Roof Steam Cleaning in Ayrshire
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Professional roof steam cleaning services to remove moss, algae, and dirt from your roof tiles. 
-              Safe, effective, and environmentally friendly cleaning that protects your property's value.
+              Professional roof steam cleaning services in Ayrshire to remove moss, algae, and dirt from your roof tiles. 
+              Safe, effective, and environmentally friendly roof cleaning that protects your property's value. 
+              Expert roof moss removal and roof cleaning services across Irvine, Ayr, Kilmarnock, Troon, Prestwick, and outer Glasgow.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -102,6 +96,22 @@ const RoofSteamCleaning = () => {
       {/* Service Details */}
       <section className="py-16 bg-white">
         <div className="container mx-auto max-w-4xl px-4">
+          <div className="mb-12">
+            <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-6">
+              Professional Roof Steam Cleaning Services in Ayrshire
+            </h2>
+            <p className="text-lg text-gray-600 font-manrope leading-relaxed mb-6">
+              Our professional roof steam cleaning service in Ayrshire is the safest and most effective way to remove moss, algae, lichen, and dirt buildup from your roof tiles. 
+              Over time, organic growth on your roof can cause significant damage, leading to costly repairs. Regular roof cleaning not only improves your property's appearance 
+              but also extends the life of your roof and protects your investment.
+            </p>
+            <p className="text-lg text-gray-600 font-manrope leading-relaxed">
+              We provide comprehensive roof cleaning services across Ayrshire, including roof moss removal, algae treatment, and general roof maintenance. 
+              Our eco-friendly steam cleaning method is safe for your roof tiles, surrounding vegetation, and the environment, making it the preferred choice for 
+              residential and commercial properties throughout Irvine, Ayr, Kilmarnock, Troon, Prestwick, and outer Glasgow.
+            </p>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-6">
@@ -113,9 +123,10 @@ const RoofSteamCleaning = () => {
                     <Droplet className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Safe & Effective</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Safe & Effective Steam Cleaning</h3>
                     <p className="text-gray-600 font-manrope">
-                      Our steam cleaning method safely removes moss, algae, and dirt without damaging your roof tiles or the environment.
+                      Our professional steam cleaning method safely removes moss, algae, lichen, and dirt without damaging your roof tiles or the environment. 
+                      Unlike high-pressure washing, steam cleaning is gentle on roof surfaces while being highly effective at removing organic growth and stains.
                     </p>
                   </div>
                 </div>
@@ -125,9 +136,10 @@ const RoofSteamCleaning = () => {
                     <Shield className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Property Protection</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Property Protection & Value</h3>
                     <p className="text-gray-600 font-manrope">
-                      Regular roof cleaning prevents damage from organic growth and maintains your property's curb appeal and value.
+                      Regular roof cleaning prevents damage from organic growth, maintains your property's curb appeal, and protects your investment. 
+                      A clean roof not only looks better but also functions better, preventing water damage and extending the lifespan of your roof tiles.
                     </p>
                   </div>
                 </div>
@@ -137,9 +149,10 @@ const RoofSteamCleaning = () => {
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Quick & Reliable</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Quick & Reliable Service</h3>
                     <p className="text-gray-600 font-manrope">
-                      Professional service completed efficiently with minimal disruption to your daily routine.
+                      Our experienced team completes roof steam cleaning efficiently with minimal disruption to your daily routine. 
+                      We work quickly and professionally, ensuring your roof is cleaned to the highest standards while respecting your property and schedule.
                     </p>
                   </div>
                 </div>
@@ -171,6 +184,91 @@ const RoofSteamCleaning = () => {
                   </div>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto max-w-4xl px-4">
+          <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-8 text-center">
+            Our Roof Steam Cleaning Process
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg">
+              <div className="w-12 h-12 bg-[#526bb0] rounded-full flex items-center justify-center mb-4">
+                <span className="text-white font-manrope font-bold text-xl">1</span>
+              </div>
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">Inspection</h3>
+              <p className="text-gray-600 font-manrope">
+                We begin with a thorough inspection of your roof to assess the condition, identify problem areas, and determine the best cleaning approach.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg">
+              <div className="w-12 h-12 bg-[#526bb0] rounded-full flex items-center justify-center mb-4">
+                <span className="text-white font-manrope font-bold text-xl">2</span>
+              </div>
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">Steam Cleaning</h3>
+              <p className="text-gray-600 font-manrope">
+                Our professional team uses specialized steam cleaning equipment to safely remove moss, algae, and dirt from your roof tiles without causing damage.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg">
+              <div className="w-12 h-12 bg-[#526bb0] rounded-full flex items-center justify-center mb-4">
+                <span className="text-white font-manrope font-bold text-xl">3</span>
+              </div>
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">Final Inspection</h3>
+              <p className="text-gray-600 font-manrope">
+                We conduct a final inspection to ensure your roof is clean and in excellent condition, leaving you with a roof that looks great and is protected.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto max-w-4xl px-4">
+          <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-8 text-center">
+            Frequently Asked Questions About Roof Steam Cleaning
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">
+                How often should I have my roof cleaned?
+              </h3>
+              <p className="text-gray-600 font-manrope">
+                We recommend professional roof cleaning every 2-3 years, depending on your location and the amount of organic growth. 
+                Properties in areas with high rainfall and humidity may need more frequent cleaning to prevent moss and algae buildup.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">
+                Is steam cleaning safe for all roof types?
+              </h3>
+              <p className="text-gray-600 font-manrope">
+                Yes, our steam cleaning method is safe for most roof types including slate, tile, and concrete roofs. 
+                The gentle steam process effectively removes organic growth without the high pressure that can damage roof tiles.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">
+                How much does roof cleaning cost in Ayrshire?
+              </h3>
+              <p className="text-gray-600 font-manrope">
+                Roof cleaning costs vary depending on the size of your roof, the extent of cleaning needed, and accessibility. 
+                Contact us for a free, no-obligation quote tailored to your specific property. We provide competitive pricing for roof cleaning services across Ayrshire.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">
+                Will roof cleaning prevent future moss growth?
+              </h3>
+              <p className="text-gray-600 font-manrope">
+                While regular cleaning significantly reduces moss and algae growth, complete prevention depends on environmental factors. 
+                Our cleaning process removes existing growth and helps maintain a cleaner roof for longer periods between cleanings.
+              </p>
             </div>
           </div>
         </div>

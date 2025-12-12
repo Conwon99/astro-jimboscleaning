@@ -14,14 +14,7 @@ const RenderSoftwashing = () => {
   };
 
   const handleGetQuote = () => {
-    window.location.href = '/#contact';
-    // Small delay to ensure the page has loaded before scrolling
-    setTimeout(() => {
-      const contactElement = document.getElementById('contact');
-      if (contactElement) {
-        contactElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    window.location.href = '/contact';
   };
 
   const handleOurProcess = () => {
@@ -76,8 +69,9 @@ const RenderSoftwashing = () => {
               Render Softwashing in Ayrshire
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Gentle softwashing for render surfaces, removing stains and organic growth without damage. 
-              Professional cleaning that restores your property's appearance safely and effectively.
+              Professional render softwashing services in Ayrshire for gentle, effective cleaning of render surfaces. 
+              Our softwashing technique removes stains, algae, and organic growth without damage, restoring your property's appearance safely. 
+              Expert render cleaning across Irvine, Ayr, Kilmarnock, Troon, Prestwick, and outer Glasgow.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -102,6 +96,23 @@ const RenderSoftwashing = () => {
       {/* Service Details */}
       <section className="py-16 bg-white">
         <div className="container mx-auto max-w-4xl px-4">
+          <div className="mb-12">
+            <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-6">
+              Professional Render Softwashing Services in Ayrshire
+            </h2>
+            <p className="text-lg text-gray-600 font-manrope leading-relaxed mb-6">
+              Our professional render softwashing service in Ayrshire provides gentle, effective cleaning for render surfaces without the risk of damage 
+              associated with high-pressure washing. Render surfaces are particularly vulnerable to algae, moss, and dirt buildup, which can make your 
+              property look neglected and reduce its value. Our eco-friendly softwashing technique safely removes all organic growth and stains, 
+              restoring your render to its original clean appearance.
+            </p>
+            <p className="text-lg text-gray-600 font-manrope leading-relaxed">
+              We provide comprehensive render softwashing services across Ayrshire using specialized low-pressure cleaning techniques and eco-friendly solutions. 
+              Our softwashing method is safe for all render types and provides long-lasting results. We serve homes and businesses throughout Irvine, Ayr, 
+              Kilmarnock, Troon, Prestwick, and outer Glasgow, ensuring your render always looks its best.
+            </p>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-6">
@@ -113,9 +124,10 @@ const RenderSoftwashing = () => {
                     <Droplet className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Gentle & Safe</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Gentle & Safe Softwashing</h3>
                     <p className="text-gray-600 font-manrope">
-                      Our softwashing technique uses low-pressure cleaning that's gentle on render surfaces while effectively removing stains and organic growth.
+                      Our softwashing technique uses low-pressure cleaning that's gentle on render surfaces while effectively removing stains, algae, 
+                      and organic growth. Unlike high-pressure washing, softwashing won't damage your render or cause water ingress.
                     </p>
                   </div>
                 </div>
@@ -127,7 +139,8 @@ const RenderSoftwashing = () => {
                   <div>
                     <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Surface Protection</h3>
                     <p className="text-gray-600 font-manrope">
-                      Specialized cleaning solutions that remove dirt and stains without damaging the render or surrounding areas.
+                      Specialized eco-friendly cleaning solutions remove dirt, stains, and organic growth without damaging the render or surrounding areas. 
+                      Our methods protect your property while achieving excellent cleaning results.
                     </p>
                   </div>
                 </div>
@@ -139,7 +152,8 @@ const RenderSoftwashing = () => {
                   <div>
                     <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Long-lasting Results</h3>
                     <p className="text-gray-600 font-manrope">
-                      Professional treatment that provides lasting results, keeping your render looking clean and fresh for longer.
+                      Professional softwashing treatment provides lasting results, keeping your render looking clean and fresh for longer. 
+                      Our cleaning solutions help prevent future organic growth, extending the time between cleanings.
                     </p>
                   </div>
                 </div>
@@ -171,6 +185,91 @@ const RenderSoftwashing = () => {
                   </div>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto max-w-4xl px-4">
+          <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-8 text-center">
+            Our Render Softwashing Process
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg">
+              <div className="w-12 h-12 bg-[#526bb0] rounded-full flex items-center justify-center mb-4">
+                <span className="text-white font-manrope font-bold text-xl">1</span>
+              </div>
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">Assessment</h3>
+              <p className="text-gray-600 font-manrope">
+                We assess your render to identify problem areas, determine the best softwashing approach, and protect surrounding areas.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg">
+              <div className="w-12 h-12 bg-[#526bb0] rounded-full flex items-center justify-center mb-4">
+                <span className="text-white font-manrope font-bold text-xl">2</span>
+              </div>
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">Softwashing Treatment</h3>
+              <p className="text-gray-600 font-manrope">
+                Our team applies specialized eco-friendly cleaning solutions using low-pressure techniques to safely remove all organic growth and stains.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg">
+              <div className="w-12 h-12 bg-[#526bb0] rounded-full flex items-center justify-center mb-4">
+                <span className="text-white font-manrope font-bold text-xl">3</span>
+              </div>
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">Final Rinse</h3>
+              <p className="text-gray-600 font-manrope">
+                We gently rinse the render to remove all cleaning solutions and debris, leaving your render clean and protected for longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto max-w-4xl px-4">
+          <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-8 text-center">
+            Frequently Asked Questions About Render Softwashing
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">
+                What is the difference between softwashing and pressure washing?
+              </h3>
+              <p className="text-gray-600 font-manrope">
+                Softwashing uses low-pressure cleaning with specialized solutions, making it safe for delicate surfaces like render. 
+                Pressure washing uses high-pressure water which can damage render and cause water ingress. Softwashing is the recommended method for render cleaning.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">
+                How often should render be softwashed?
+              </h3>
+              <p className="text-gray-600 font-manrope">
+                We recommend render softwashing every 2-3 years to maintain appearance and prevent organic growth buildup. 
+                Properties in areas with high humidity or many trees may need more frequent cleaning.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">
+                Is softwashing safe for all render types?
+              </h3>
+              <p className="text-gray-600 font-manrope">
+                Yes, our softwashing technique is safe for all render types including monocouche, pebbledash, and smooth render. 
+                We adjust our cleaning solutions and techniques based on your specific render type to ensure optimal results.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-manrope font-normal text-gray-900 mb-3">
+                Will softwashing prevent future algae growth?
+              </h3>
+              <p className="text-gray-600 font-manrope">
+                While softwashing removes existing growth and helps prevent future buildup, complete prevention depends on environmental factors. 
+                Our cleaning solutions provide some protection, but regular maintenance is recommended to keep render looking its best.
+              </p>
             </div>
           </div>
         </div>

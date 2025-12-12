@@ -1,0 +1,28 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import AboutPage from '@/components/AboutPage';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="About Us | Jimbo's Exterior Cleaning | Professional Cleaning Services in Ayrshire"
+  description="Learn about Jimbo's Exterior Cleaning - a trusted exterior cleaning business serving Ayrshire for years. Professional roof cleaning, softwashing, driveway cleaning, and more. Based in Irvine, serving across Ayrshire and outer Glasgow."
+  canonical="/about"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <Header client:load />
+    
+    <main>
+      <AboutPage client:load />
+    </main>
+    
+    <Footer client:load />
+  </TooltipProvider>
+</Layout>
+

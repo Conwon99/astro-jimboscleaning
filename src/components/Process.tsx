@@ -46,7 +46,7 @@ const Process = () => {
               expert team dedicated to delivering outstanding exterior cleaning results.
             </p>
             <button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => window.location.href = '/contact'}
               className="border-2 border-[#526bb0] text-[#526bb0] hover:bg-[#526bb0] hover:text-white font-manrope font-normal px-8 py-3 transition-colors rounded-none"
             >
               Let's talk

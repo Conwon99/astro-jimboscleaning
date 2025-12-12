@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import InteriorExteriorWindowCleaning from './InteriorExteriorWindowCleaning';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Interior and Exterior Window Cleaning in Ayrshire | Jimbo's Exterior Cleaning"
+  description="Complete interior and exterior window cleaning services for homes and businesses across Ayrshire. Professional cleaning for both sides of your windows."
+  canonical="/services/interior-exterior-window-cleaning"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <InteriorExteriorWindowCleaning client:load />
+  </TooltipProvider>
+</Layout>
+
+

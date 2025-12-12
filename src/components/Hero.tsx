@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import LazyImage from "@/components/ui/lazy-image";
+import { Star, Facebook } from "lucide-react";
 
 // Google Analytics type declaration
 declare global {
@@ -39,7 +40,7 @@ const Hero = () => {
               viewport={{ once: true, amount: 0.7 }}
               className="text-5xl md:text-6xl font-manrope text-white mb-6 leading-tight"
             >
-              Professional Exterior Cleaning Services in Ayrshire & Glasgow
+              Roof Cleaning in Ayrshire
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 40 }}
@@ -48,7 +49,7 @@ const Hero = () => {
               viewport={{ once: true, amount: 0.7 }}
               className="text-base text-white/90 mb-8 font-manrope max-w-md"
             >
-              Transform your property's appearance and protect its value with Ayrshire's trusted exterior cleaning specialists. From <a href="/services/roof-steam-cleaning" className="text-white underline hover:text-blue-200">roof steam cleaning</a> to <a href="/services/driveway-cleaning" className="text-white underline hover:text-blue-200">driveway cleaning</a>, we use safe, effective methods to deliver outstanding results—every time. Serving all of Ayrshire including <a href="/locations/irvine" className="text-white underline hover:text-blue-200">Irvine</a>, <a href="/locations/ayr" className="text-white underline hover:text-blue-200">Ayr</a>, <a href="/locations/troon" className="text-white underline hover:text-blue-200">Troon</a>, <a href="/locations/prestwick" className="text-white underline hover:text-blue-200">Prestwick</a>, <a href="/locations/kilmarnock" className="text-white underline hover:text-blue-200">Kilmarnock</a> & outer Glasgow.
+              Transform your property's appearance with Ayrshire's trusted exterior cleaning specialists. From <a href="/services/roof-steam-cleaning" className="text-white underline hover:text-blue-200">roof steam cleaning</a> to <a href="/services/driveway-cleaning" className="text-white underline hover:text-blue-200">driveway cleaning</a>, we deliver outstanding results every time. Serving <a href="/locations/irvine" className="text-white underline hover:text-blue-200">Irvine</a>, <a href="/locations/ayr" className="text-white underline hover:text-blue-200">Ayr</a>, <a href="/locations/troon" className="text-white underline hover:text-blue-200">Troon</a>, <a href="/locations/prestwick" className="text-white underline hover:text-blue-200">Prestwick</a>, <a href="/locations/kilmarnock" className="text-white underline hover:text-blue-200">Kilmarnock</a> & outer Glasgow.
             </motion.p>
             
             <motion.div
@@ -56,7 +57,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: true, amount: 0.7 }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col gap-4"
             >
               <Button 
                 onClick={() => {
@@ -68,12 +69,51 @@ const Hero = () => {
                       value: 1
                     });
                   }
-                  scrollToSection('contact');
+                  window.location.href = '/contact';
                 }}
-                className="bg-[#526bb0] hover:bg-blue-700 text-white font-manrope font-normal text-lg px-8 py-6 rounded-none"
+                className="bg-[#526bb0] hover:bg-blue-700 text-white font-manrope font-normal text-lg px-8 py-6 rounded-none w-fit"
               >
                 Get a free quote
               </Button>
+              
+              {/* 5-Star Review Component */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, ease: "easeOut", delay: 0.45 }}
+                viewport={{ once: true, amount: 0.7 }}
+                className="flex items-center gap-3"
+              >
+                <div className="flex items-center gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                    />
+                  ))}
+                </div>
+                <span className="text-white font-manrope font-normal text-sm">
+                  42+ reviews
+                </span>
+                <a
+                  href="https://www.facebook.com/jimbosexteriorcleaning"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-blue-200 transition-colors"
+                  aria-label="Visit our Facebook page"
+                  onClick={() => {
+                    if (typeof gtag !== 'undefined') {
+                      gtag('event', 'click', {
+                        event_category: 'Social',
+                        event_label: 'Facebook Link',
+                        value: 1
+                      });
+                    }
+                  }}
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+              </motion.div>
             </motion.div>
           </div>
         </div>
@@ -81,14 +121,36 @@ const Hero = () => {
 
       {/* Before and After Slider Section */}
       <section className="py-20 bg-white" id="before-after">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-manrope text-gray-900 mb-8 font-normal text-center">Before & After</h2>
-          <BeforeAfterSlider 
-            beforeImg="/lovable-uploads/after1.jpg" 
-            afterImg="/lovable-uploads/bef1.jpg"
-            beforeWebp="/lovable-uploads/after1.webp"
-            afterWebp="/lovable-uploads/bef1.webp"
-          />
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <BeforeAfterSlider 
+              beforeImg="/lovable-uploads/bef1.jpg" 
+              afterImg="/lovable-uploads/after1.jpg"
+              beforeWebp="/lovable-uploads/bef1.webp"
+              afterWebp="/lovable-uploads/after1.webp"
+            />
+            <div className="relative w-full overflow-hidden rounded-lg shadow-lg">
+              <LazyImage
+                src="/jm1.jpg"
+                alt="Exterior cleaning result"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="relative w-full overflow-hidden rounded-lg shadow-lg">
+              <LazyImage
+                src="/jm2.jpg"
+                alt="Exterior cleaning result"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="relative w-full overflow-hidden rounded-lg shadow-lg">
+              <LazyImage
+                src="/jm3.jpg"
+                alt="Exterior cleaning result"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </>

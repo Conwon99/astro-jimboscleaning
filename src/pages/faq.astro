@@ -1,0 +1,116 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import FAQPage from '@/components/FAQPage';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does exterior cleaning cost in Ayrshire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cost of exterior cleaning varies depending on the size of your property, the type of service needed, and the extent of cleaning required. We provide free, no-obligation quotes for all our services. Contact us today to get a personalized quote for your property."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I have my roof cleaned?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recommend professional roof cleaning every 2-3 years, depending on your location and the amount of organic growth. Properties in areas with high rainfall and humidity may need more frequent cleaning to prevent moss and algae buildup. Regular cleaning helps maintain your roof's condition and appearance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is roof steam cleaning safe for all roof types?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our steam cleaning method is safe for most roof types including slate, tile, and concrete roofs. The gentle steam process effectively removes organic growth without the high pressure that can damage roof tiles. We assess your roof type before cleaning to ensure we use the most appropriate method."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you clean both interior and exterior windows?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer both interior and exterior window cleaning services. We can clean both sides during the same visit or provide separate services depending on your needs. Our comprehensive window cleaning ensures all surfaces are spotless and streak-free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a typical exterior cleaning job take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The time required depends on the size of your property and the services needed. Most residential properties can be completed in 1-4 hours. We'll provide an estimated timeframe when we provide your quote. Our team works efficiently to minimize disruption to your daily routine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you insured for exterior cleaning work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we are fully insured and our team is trained to work safely at height and on various surfaces. We take all necessary safety precautions to protect your property and our team during all cleaning work. You can have peace of mind knowing we're fully covered."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you cover in Ayrshire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide exterior cleaning services throughout Ayrshire, including Irvine, Ayr, Kilmarnock, Troon, Prestwick, and outer Glasgow. Contact us to confirm we cover your specific area. We're happy to discuss service availability for your location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer regular maintenance cleaning contracts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer flexible regular cleaning contracts with scheduled visits. Regular maintenance programs ensure your property always looks its best and can be more cost-effective than one-off cleans. We can tailor a maintenance schedule to suit your needs and budget."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between softwashing and pressure washing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Softwashing uses low-pressure cleaning with specialized solutions, making it safe for delicate surfaces like render. Pressure washing uses high-pressure water which can damage render and cause water ingress. We use the appropriate method based on the surface type to ensure safe, effective cleaning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you remove oil stains from driveways?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we use specialized cleaning solutions and techniques to effectively remove oil stains from driveways. While some very old or deeply embedded stains may not be completely removed, we can significantly improve their appearance. Our professional cleaning methods are highly effective at removing most stains."
+      }
+    }
+  ]
+};
+---
+
+<Layout 
+  title="FAQ | Frequently Asked Questions | Jimbo's Exterior Cleaning"
+  description="Frequently asked questions about exterior cleaning services in Ayrshire. Get answers about roof cleaning, window cleaning, pricing, service areas, and more."
+  canonical="/faq"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <Header client:load />
+    
+    <main>
+      <FAQPage client:load />
+    </main>
+    
+    <Footer client:load />
+  </TooltipProvider>
+</Layout>
+

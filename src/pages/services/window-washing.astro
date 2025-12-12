@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import WindowWashing from './WindowWashing';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Window Washing in Ayrshire | Jimbo's Exterior Cleaning"
+  description="Professional window washing services for streak-free, sparkling results across Ayrshire. Expert cleaning for all types of windows."
+  canonical="/services/window-washing"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <WindowWashing client:load />
+  </TooltipProvider>
+</Layout>
+
+

@@ -63,7 +63,7 @@ const Irvine = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => window.location.href = '/contact'}
                 className="bg-[#526bb0] hover:bg-blue-700 text-white font-manrope font-normal px-8 py-3"
               >
                 Get Free Quote
@@ -471,7 +471,7 @@ const Irvine = () => {
           
           <div className="text-center">
             <Button 
-              onClick={() => window.location.href = '/#contact'}
+              onClick={() => window.location.href = '/contact'}
               className="bg-[#526bb0] hover:bg-blue-700 text-white font-manrope font-normal px-8 py-3"
             >
               Get Your Free Quote

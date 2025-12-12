@@ -4,31 +4,6 @@ import { Button } from "@/components/ui/button";
 import LazyImage from "@/components/ui/lazy-image";
 
 const Header = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleNavigation = (sectionId: string) => {
-    // If we're on the home page, just scroll to the section
-    const pathname = window.location.pathname;
-    if (pathname === '/' || pathname === '/index.html') {
-      scrollToSection(sectionId);
-    } else {
-      // If we're on a different page, navigate to home page with hash
-      window.location.href = `/#${sectionId}`;
-      // Small delay to ensure the page has loaded before scrolling
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }
-  };
-
   const handlePhoneClick = () => {
     const phoneNumber = "7919270128"; // UK mobile number without country code
     
@@ -62,30 +37,30 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => handleNavigation('home')}
+            <a 
+              href="/"
               className="text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors"
             >
               Home
-            </button>
-            <button 
-              onClick={() => handleNavigation('services')}
+            </a>
+            <a 
+              href="/services"
               className="text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors"
             >
               Services
-            </button>
-            <button 
-              onClick={() => handleNavigation('process')}
+            </a>
+            <a 
+              href="/about"
               className="text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors"
             >
-              Process
-            </button>
-            <button 
-              onClick={() => handleNavigation('contact')}
+              About
+            </a>
+            <a 
+              href="/contact"
               className="text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors"
             >
               Contact
-            </button>
+            </a>
           </nav>
 
           <div className="flex items-center space-x-4">
@@ -97,7 +72,7 @@ const Header = () => {
               <span className="font-manrope font-normal text-[#526bb0]">07919270128</span>
             </button>
             <Button 
-              onClick={() => handleNavigation('contact')}
+              onClick={() => window.location.href = '/contact'}
               className="bg-[#526bb0] hover:bg-blue-700 text-white font-manrope font-normal"
             >
               Get a free quote

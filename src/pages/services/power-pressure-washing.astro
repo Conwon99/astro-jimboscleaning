@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import PowerPressureWashing from './PowerPressureWashing';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Power/Pressure Washing in Ayrshire | Jimbo's Exterior Cleaning"
+  description="Professional power washing and pressure washing services for deep cleaning of exterior surfaces across Ayrshire. Effective cleaning for driveways, patios, and more."
+  canonical="/services/power-pressure-washing"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <PowerPressureWashing client:load />
+  </TooltipProvider>
+</Layout>
+
+

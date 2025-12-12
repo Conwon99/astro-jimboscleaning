@@ -79,43 +79,44 @@ const Services = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="bg-white hover:shadow-lg transition-shadow duration-300">
-              <CardHeader>
-                <div className="mb-4">
-                  {service.icon}
-                </div>
-                <CardTitle className="text-xl font-manrope text-gray-900 mb-3 font-normal">
-                  <a 
-                    href={service.serviceLink}
-                    className="hover:text-[#526bb0] transition-colors"
-                  >
+            <a 
+              key={index}
+              href={service.serviceLink}
+              className="block"
+            >
+              <Card className="bg-white hover:shadow-lg transition-shadow duration-300 h-full cursor-pointer">
+                <CardHeader>
+                  <div className="mb-4">
+                    {service.icon}
+                  </div>
+                  <CardTitle className="text-xl font-manrope text-gray-900 mb-3 font-normal hover:text-[#526bb0] transition-colors">
                     {service.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 font-manrope mb-6 leading-relaxed">
+                    {service.description}
+                  </p>
+                  <a
+                    href="/contact"
+                    onClick={(e) => {
+                      // Track service quote button click
+                      if (typeof gtag !== 'undefined') {
+                        gtag('event', 'click', {
+                          event_category: 'Services',
+                          event_label: `${service.title} Quote Button`,
+                          value: 1
+                        });
+                      }
+                    }}
+                    className="flex items-center text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors group"
+                  >
+                    {service.link}
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 font-manrope mb-6 leading-relaxed">
-                  {service.description}
-                </p>
-                <button 
-                  onClick={() => {
-                    // Track service quote button click
-                    if (typeof gtag !== 'undefined') {
-                      gtag('event', 'click', {
-                        event_category: 'Services',
-                        event_label: `${service.title} Quote Button`,
-                        value: 1
-                      });
-                    }
-                    scrollToSection('contact');
-                  }}
-                  className="flex items-center text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors group"
-                >
-                  {service.link}
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </a>
           ))}
         </div>
       </div>

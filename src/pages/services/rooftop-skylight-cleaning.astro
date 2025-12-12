@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import RooftopSkylightCleaning from './RooftopSkylightCleaning';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Rooftop/Skylight Cleaning in Ayrshire | Jimbo's Exterior Cleaning"
+  description="Expert rooftop and skylight cleaning services for safe, effective results across Ayrshire. Professional cleaning for roofs and skylights."
+  canonical="/services/rooftop-skylight-cleaning"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <RooftopSkylightCleaning client:load />
+  </TooltipProvider>
+</Layout>
+
+

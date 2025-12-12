@@ -1,0 +1,32 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import RoofSteamCleaningCity from './RoofSteamCleaningCity';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+
+export async function getStaticPaths() {
+  const cities = ['irvine', 'ayr', 'kilmarnock', 'troon', 'prestwick'];
+  
+  return cities.map((city) => ({
+    params: { city },
+  }));
+}
+
+const { city } = Astro.params;
+const cityCapitalized = city ? city.charAt(0).toUpperCase() + city.slice(1) : '';
+
+const title = `Roof Steam Cleaning ${cityCapitalized} | Professional Service | Jimbo's Exterior Cleaning`;
+const description = `Professional roof steam cleaning services in ${cityCapitalized}, Ayrshire. Safe and effective steam cleaning to remove moss, algae, and dirt from roof tiles.`;
+const canonical = `/services/roof-steam-cleaning/${city}`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <RoofSteamCleaningCity city={cityCapitalized} client:load />
+  </TooltipProvider>
+</Layout>
+
+

@@ -1,0 +1,38 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import WindowCleaningServiceCategory from './WindowCleaningServiceCategory';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+
+export async function getStaticPaths() {
+  const cities = ['irvine', 'ayr', 'kilmarnock', 'troon', 'prestwick'];
+  
+  return cities.map((city) => ({
+    params: { city },
+  }));
+}
+
+const { city } = Astro.params;
+
+// Capitalize first letter of city
+const cityCapitalized = city ? city.charAt(0).toUpperCase() + city.slice(1) : '';
+
+const title = `Window Cleaning Service ${cityCapitalized} | Professional & Reliable | Jimbo's Exterior Cleaning`;
+const description = `Professional window cleaning service in ${cityCapitalized}, Ayrshire. Expert glass cleaning, gutter cleaning, window cleaning, power washing, and rooftop cleaning services.`;
+const canonical = `/categories/window-cleaning-service/${city}`;
+---
+
+<Layout 
+  title={title}
+  description={description}
+  canonical={canonical}
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <WindowCleaningServiceCategory city={cityCapitalized} client:load />
+  </TooltipProvider>
+</Layout>
+
+

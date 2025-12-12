@@ -1,0 +1,78 @@
+GOOGLE BUSINESS PROFILE - CATEGORIES AND SERVICES
+==================================================
+
+PRIMARY CATEGORY
+----------------
+Roofing Service
+
+
+ADDITIONAL CATEGORIES
+---------------------
+1. Cleaners
+2. Gutter Cleaning Service
+3. Window Cleaning Service
+
+
+SERVICES BY CATEGORY
+====================
+
+ROOFING SERVICE (Primary Category)
+----------------------------------
+- Gutter cleaning
+- Roof Steam Cleaning
+- Render Softwashing
+- Driveway Cleaning
+- PVC White Cleaning
+- Window Cleaning
+
+
+CLEANERS (Additional Category)
+------------------------------
+- Interior and exterior window cleaning
+- Driveway Cleaning
+- Window Cleaning
+
+
+GUTTER CLEANING SERVICE (Additional Category)
+---------------------------------------------
+- Glass and mirror cleaning
+- Gutter cleaning
+- Interior and exterior window cleaning
+- Power/pressure washing
+- Rooftop/skylight cleaning
+
+
+WINDOW CLEANING SERVICE (Additional Category)
+---------------------------------------------
+- Glass and mirror cleaning
+- Gutter cleaning
+- Gutter cleaning (duplicate)
+- Interior and exterior window cleaning
+- Power/pressure washing
+- Rooftop/skylight cleaning
+- Window washing
+
+
+ALL UNIQUE SERVICES (Consolidated List)
+========================================
+- Gutter cleaning
+- Roof Steam Cleaning
+- Render Softwashing
+- Driveway Cleaning
+- PVC White Cleaning
+- Window Cleaning
+- Interior and exterior window cleaning
+- Glass and mirror cleaning
+- Power/pressure washing
+- Rooftop/skylight cleaning
+- Window washing
+
+
+NOTES
+=====
+- Primary category: Roofing Service
+- 3 additional categories: Cleaners, Gutter Cleaning Service, Window Cleaning Service
+- Some services appear in multiple categories (e.g., "Gutter cleaning", "Window Cleaning")
+- "Gutter cleaning" appears twice in Window Cleaning Service category (likely a duplicate)
+
+

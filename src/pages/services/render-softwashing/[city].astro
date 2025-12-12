@@ -1,0 +1,32 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import RenderSoftwashingCity from './RenderSoftwashingCity';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+
+export async function getStaticPaths() {
+  const cities = ['irvine', 'ayr', 'kilmarnock', 'troon', 'prestwick'];
+  
+  return cities.map((city) => ({
+    params: { city },
+  }));
+}
+
+const { city } = Astro.params;
+const cityCapitalized = city ? city.charAt(0).toUpperCase() + city.slice(1) : '';
+
+const title = `Render Softwashing ${cityCapitalized} | Professional Service | Jimbo's Exterior Cleaning`;
+const description = `Professional render softwashing services in ${cityCapitalized}, Ayrshire. Gentle softwashing for render surfaces, removing stains and organic growth.`;
+const canonical = `/services/render-softwashing/${city}`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <RenderSoftwashingCity city={cityCapitalized} client:load />
+  </TooltipProvider>
+</Layout>
+
+

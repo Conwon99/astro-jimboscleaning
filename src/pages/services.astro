@@ -1,0 +1,28 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import ServicesPage from '@/components/ServicesPage';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Our Services | Exterior Cleaning Services in Ayrshire | Jimbo's"
+  description="Professional exterior cleaning services in Ayrshire: roof steam cleaning, render softwashing, driveway cleaning, gutter cleaning, PVC cleaning, and window cleaning. Expert services across Irvine, Ayr, Kilmarnock, Troon, and Prestwick."
+  canonical="/services"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <Header client:load />
+    
+    <main>
+      <ServicesPage client:load />
+    </main>
+    
+    <Footer client:load />
+  </TooltipProvider>
+</Layout>
+
