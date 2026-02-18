@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import LazyImage from "@/components/ui/lazy-image";
+import { Star } from "lucide-react";
 
 // Google Analytics type declaration
 declare global {
@@ -39,17 +40,52 @@ const Hero = () => {
               viewport={{ once: true, amount: 0.7 }}
               className="text-5xl md:text-6xl font-manrope text-white mb-6 leading-tight"
             >
-              Professional Exterior Cleaning Services in Ayrshire & Glasgow
+              Professional Roof Cleaning Services in Ayrshire & Glasgow
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
               viewport={{ once: true, amount: 0.7 }}
-              className="text-base text-white/90 mb-8 font-manrope max-w-md"
+              className="text-base text-white/90 mb-6 font-manrope max-w-md"
             >
-              Transform your property's appearance and protect its value with Ayrshire's trusted exterior cleaning specialists. From <a href="/services/roof-steam-cleaning" className="text-white underline hover:text-blue-200">roof steam cleaning</a> to <a href="/services/driveway-cleaning" className="text-white underline hover:text-blue-200">driveway cleaning</a>, we use safe, effective methods to deliver outstanding results—every time. Serving all of Ayrshire including <a href="/locations/irvine" className="text-white underline hover:text-blue-200">Irvine</a>, <a href="/locations/ayr" className="text-white underline hover:text-blue-200">Ayr</a>, <a href="/locations/troon" className="text-white underline hover:text-blue-200">Troon</a>, <a href="/locations/prestwick" className="text-white underline hover:text-blue-200">Prestwick</a>, <a href="/locations/kilmarnock" className="text-white underline hover:text-blue-200">Kilmarnock</a> & outer Glasgow.
+              Professional Ayrshire roof cleaning services and Glasgow roof cleaning service. Safe roof steam cleaning, moss removal from roof, and algae removal from roof tiles. Expert exterior cleaning services Ayrshire and professional exterior cleaning Glasgow.
             </motion.p>
+            
+            <motion.a
+              href="https://www.facebook.com/profile.php?id=100076596473868&sk=reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0.25 }}
+              viewport={{ once: true, amount: 0.7 }}
+              onClick={() => {
+                if (typeof gtag !== 'undefined') {
+                  gtag('event', 'click', {
+                    event_category: 'Social Proof',
+                    event_label: 'Facebook Reviews Link',
+                    value: 1
+                  });
+                }
+              }}
+              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-3 mb-8 hover:bg-white/20 transition-all group"
+            >
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                  />
+                ))}
+              </div>
+              <span className="text-white font-manrope font-medium">
+                5.0 Rating
+              </span>
+              <span className="text-white/80 font-manrope text-sm">
+                Read Reviews →
+              </span>
+            </motion.a>
             
             <motion.div
               initial={{ opacity: 0, y: 40 }}

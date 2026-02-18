@@ -76,8 +76,8 @@ const WindowCleaning = () => {
               Window Cleaning in Ayrshire
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Streak-free window cleaning for sparkling results every time. 
-              Professional window cleaning services for homes and businesses across Ayrshire.
+              Window cleaning Irvine, residential window cleaning Ayr, and Troon window cleaners. Professional window washing for sparkling results every time. 
+              Expert window cleaning services for homes and businesses across Ayrshire.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

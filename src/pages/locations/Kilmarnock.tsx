@@ -52,13 +52,12 @@ const Kilmarnock = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-manrope font-normal text-gray-900 mb-6">
-              Exterior Cleaning Services in Kilmarnock
+              Roof Cleaning Services in Kilmarnock
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Professional exterior cleaning services in Kilmarnock, Ayrshire. From roof steam cleaning to driveway cleaning, 
-              we provide comprehensive cleaning solutions for homes and businesses across Kilmarnock, outer Glasgow, and surrounding areas. 
-              Serving this historic town, we understand the unique challenges of maintaining properties in this 
-              vibrant community with its rich industrial heritage and modern developments.
+              Professional roof cleaning services in Kilmarnock, Ayrshire. Kilmarnock exterior cleaners, gutter maintenance Kilmarnock, and comprehensive cleaning solutions for homes and businesses. 
+              From roof steam cleaning to driveway cleaning, we provide expert services across Kilmarnock, outer Glasgow, and surrounding areas. 
+              Serving this historic town, we understand the unique challenges of maintaining properties in this vibrant community with its rich industrial heritage.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -195,7 +194,7 @@ const Kilmarnock = () => {
                   <div>
                     <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Trusted Kilmarnock Service</h3>
                     <p className="text-gray-600 font-manrope">
-                      Trusted by Kilmarnock homeowners and businesses for consistent, high-quality exterior cleaning results. 
+                      Trusted by Kilmarnock homeowners and businesses for consistent, high-quality roof cleaning results. 
                       We've built our reputation serving properties from the historic town center to modern developments 
                       in Grange, ensuring every Kilmarnock property receives the attention it deserves.
                     </p>
@@ -460,7 +459,7 @@ const Kilmarnock = () => {
               Ready to Get Started in Kilmarnock?
             </h2>
             <p className="text-xl text-gray-600 font-manrope">
-              Contact us today for a free quote on exterior cleaning services in Kilmarnock.
+              Contact us today for a free quote on roof cleaning services in Kilmarnock.
             </p>
           </div>
           

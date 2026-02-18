@@ -52,13 +52,12 @@ const Irvine = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-manrope font-normal text-gray-900 mb-6">
-              Exterior Cleaning Services in Irvine
+              Roof Cleaning Services in Irvine
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Professional exterior cleaning services in Irvine, Ayrshire. From roof steam cleaning to driveway cleaning, 
-              we provide comprehensive cleaning solutions for homes and businesses across Irvine, outer Glasgow, and surrounding areas. 
-              As your local Irvine-based cleaning specialists, we understand the unique challenges of maintaining properties 
-              in this historic town and the surrounding Ayrshire region.
+              Professional roof cleaning services in Irvine, Ayrshire. Local roof cleaning Irvine, driveway cleaning Irvine, window cleaning Irvine, and cleaning services in Irvine. 
+              From roof steam cleaning to driveway cleaning, we provide comprehensive cleaning solutions for homes and businesses across Irvine, outer Glasgow, and surrounding areas. 
+              As your local Irvine-based cleaning specialists, we understand the unique challenges of maintaining properties in this historic town.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -465,7 +464,7 @@ const Irvine = () => {
               Ready to Get Started in Irvine?
             </h2>
             <p className="text-xl text-gray-600 font-manrope">
-              Contact us today for a free quote on exterior cleaning services in Irvine.
+              Contact us today for a free quote on roof cleaning services in Irvine.
             </p>
           </div>
           

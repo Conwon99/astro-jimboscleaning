@@ -76,8 +76,8 @@ const RoofSteamCleaning = () => {
               Roof Steam Cleaning in Ayrshire
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Professional roof steam cleaning services to remove moss, algae, and dirt from your roof tiles. 
-              Safe, effective, and environmentally friendly cleaning that protects your property's value.
+              Professional roof steam cleaning Ayrshire services offering safe roof steam cleaning, moss removal from roof, and algae removal from roof tiles. 
+              Our Ayrshire roof cleaning services provide roof cleaning and moss treatment that's safe, effective, and environmentally friendly, protecting your property's value.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -115,7 +115,7 @@ const RoofSteamCleaning = () => {
                   <div>
                     <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Safe & Effective</h3>
                     <p className="text-gray-600 font-manrope">
-                      Our steam cleaning method safely removes moss, algae, and dirt without damaging your roof tiles or the environment.
+                      Our safe roof steam cleaning method provides expert moss removal from roof and algae removal from roof tiles without damaging your roof or the environment. Professional roof cleaning and moss treatment for lasting protection.
                     </p>
                   </div>
                 </div>

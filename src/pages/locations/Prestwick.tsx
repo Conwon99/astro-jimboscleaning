@@ -52,13 +52,12 @@ const Prestwick = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-manrope font-normal text-gray-900 mb-6">
-              Exterior Cleaning Services in Prestwick
+              Roof Cleaning Services in Prestwick
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Professional exterior cleaning services in Prestwick, Ayrshire. From roof steam cleaning to driveway cleaning, 
-              we provide comprehensive cleaning solutions for homes and businesses across Prestwick, outer Glasgow, and surrounding areas. 
-              Serving this historic seaside town, we understand the unique challenges of maintaining properties in this 
-              beautiful coastal location with its rich aviation heritage.
+              Professional roof cleaning services in Prestwick, Ayrshire. Prestwick driveway cleaning and comprehensive cleaning solutions for homes and businesses. 
+              From roof steam cleaning to driveway cleaning, we provide expert services across Prestwick, outer Glasgow, and surrounding areas. 
+              Serving this historic seaside town, we understand the unique challenges of maintaining properties in this beautiful coastal location with its rich aviation heritage.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -193,7 +192,7 @@ const Prestwick = () => {
                   <div>
                     <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Trusted Prestwick Service</h3>
                     <p className="text-gray-600 font-manrope">
-                      Trusted by Prestwick homeowners and businesses for consistent, high-quality exterior cleaning results. 
+                      Trusted by Prestwick homeowners and businesses for consistent, high-quality roof cleaning results. 
                       We've built our reputation serving properties from the historic town center to modern developments 
                       in Monkton, ensuring every Prestwick property receives the attention it deserves.
                     </p>
@@ -456,7 +455,7 @@ const Prestwick = () => {
               Ready to Get Started in Prestwick?
             </h2>
             <p className="text-xl text-gray-600 font-manrope">
-              Contact us today for a free quote on exterior cleaning services in Prestwick.
+              Contact us today for a free quote on roof cleaning services in Prestwick.
             </p>
           </div>
           

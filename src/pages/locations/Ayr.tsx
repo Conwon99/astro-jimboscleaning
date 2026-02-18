@@ -52,13 +52,12 @@ const Ayr = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-manrope font-normal text-gray-900 mb-6">
-              Exterior Cleaning Services in Ayr
+              Roof Cleaning Services in Ayr
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Professional exterior cleaning services in Ayr, Ayrshire. From roof steam cleaning to driveway cleaning, 
-              we provide comprehensive cleaning solutions for homes and businesses across Ayr, outer Glasgow, and surrounding areas. 
-              Serving the historic county town of Ayr, we understand the unique challenges of maintaining properties 
-              in this beautiful coastal town and the surrounding Ayrshire region.
+              Professional roof cleaning services in Ayr, Ayrshire. Affordable roof cleaning Ayr, driveway pressure washing Ayr, residential window cleaning Ayr, PVC soffit cleaning Ayr, and cleaning services in Ayr. 
+              From roof steam cleaning to driveway cleaning, we provide comprehensive cleaning solutions for homes and businesses across Ayr, outer Glasgow, and surrounding areas. 
+              Serving the historic county town of Ayr, we understand the unique challenges of maintaining properties in this beautiful coastal town.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -193,7 +192,7 @@ const Ayr = () => {
                   <div>
                     <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Trusted Ayr Service</h3>
                     <p className="text-gray-600 font-manrope">
-                      Trusted by Ayr homeowners and businesses for consistent, high-quality exterior cleaning results. 
+                      Trusted by Ayr homeowners and businesses for consistent, high-quality roof cleaning results. 
                       We've built our reputation serving properties from the historic town center to modern developments 
                       in Whitletts, ensuring every Ayr property receives the attention it deserves.
                     </p>
@@ -457,7 +456,7 @@ const Ayr = () => {
               Ready to Get Started in Ayr?
             </h2>
             <p className="text-xl text-gray-600 font-manrope">
-              Contact us today for a free quote on exterior cleaning services in Ayr.
+              Contact us today for a free quote on roof cleaning services in Ayr.
             </p>
           </div>
           

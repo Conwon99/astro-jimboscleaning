@@ -1,0 +1,43 @@
+Jimbo's Exterior Cleaning - Complete URL List
+===============================================
+Domain: https://jimboscleaning.com
+Last Updated: 2024-12-19
+
+HOME PAGE
+---------
+https://jimboscleaning.com/
+
+SERVICE PAGES
+------------
+https://jimboscleaning.com/services/roof-steam-cleaning
+https://jimboscleaning.com/services/render-softwashing
+https://jimboscleaning.com/services/driveway-cleaning
+https://jimboscleaning.com/services/gutter-cleaning
+https://jimboscleaning.com/services/pvc-white-cleaning
+https://jimboscleaning.com/services/window-cleaning
+
+LOCATION PAGES
+--------------
+https://jimboscleaning.com/locations/irvine
+https://jimboscleaning.com/locations/kilmarnock
+https://jimboscleaning.com/locations/ayr
+https://jimboscleaning.com/locations/troon
+https://jimboscleaning.com/locations/prestwick
+
+OTHER PAGES
+-----------
+https://jimboscleaning.com/404 (Error page)
+
+SEO FILES
+---------
+https://jimboscleaning.com/sitemap.xml
+https://jimboscleaning.com/robots.txt
+
+===============================================
+Total Pages: 12 indexable pages
+  - 1 Home page
+  - 6 Service pages
+  - 5 Location pages
+
+All URLs use the canonical domain: https://jimboscleaning.com
+

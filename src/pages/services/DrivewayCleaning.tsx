@@ -76,8 +76,8 @@ const DrivewayCleaning = () => {
               Driveway Cleaning in Ayrshire
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Professional driveway cleaning to restore the look of your property's entrance. 
-              We use effective cleaning methods to remove oil stains, moss, algae, and general dirt buildup.
+              Professional driveway cleaning Irvine, driveway pressure washing Ayr, and driveway restoration service. 
+              Expert patio and driveway cleaning with pressure washing services to remove oil stains, moss, algae, and general dirt buildup. Driveway sealing and cleaning available.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

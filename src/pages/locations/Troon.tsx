@@ -52,13 +52,12 @@ const Troon = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-manrope font-normal text-gray-900 mb-6">
-              Exterior Cleaning Services in Troon
+              Roof Cleaning Services in Troon
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Professional exterior cleaning services in Troon, Ayrshire. From roof steam cleaning to driveway cleaning, 
-              we provide comprehensive cleaning solutions for homes and businesses across Troon, outer Glasgow, and surrounding areas. 
-              Serving the historic seaside town of Troon, we understand the unique challenges of coastal properties and 
-              the importance of maintaining your home's exterior in this beautiful Ayrshire location.
+              Professional roof cleaning services in Troon, Ayrshire. Troon window cleaners, PVC fascias cleaning Troon, and cleaning services in Troon. 
+              From roof steam cleaning to driveway cleaning, we provide comprehensive cleaning solutions for homes and businesses across Troon, outer Glasgow, and surrounding areas. 
+              Serving the historic seaside town of Troon, we understand the unique challenges of coastal properties and the importance of maintaining your home's exterior.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -196,7 +195,7 @@ const Troon = () => {
                   <div>
                     <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Reliable Service</h3>
                     <p className="text-gray-600 font-manrope">
-                      Trusted by Troon homeowners and businesses for consistent, high-quality exterior cleaning results. 
+                      Trusted by Troon homeowners and businesses for consistent, high-quality roof cleaning results. 
                       We've built our reputation through reliable service delivery, whether you're a homeowner in Fullarton, 
                       a business owner in the town center, or managing a property near the golf course.
                     </p>
@@ -465,7 +464,7 @@ const Troon = () => {
               Ready to Get Started in Troon?
             </h2>
             <p className="text-xl text-gray-600 font-manrope">
-              Contact us today for a free quote on exterior cleaning services in Troon.
+              Contact us today for a free quote on roof cleaning services in Troon.
             </p>
           </div>
           

@@ -76,7 +76,7 @@ const GutterCleaning = () => {
               Gutter Cleaning in Ayrshire
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Thorough gutter cleaning to keep your drainage systems clear and functional. 
+              Expert gutter cleaning Ayrshire and gutter maintenance Kilmarnock. Professional gutter clearing service and gutter inspection and cleaning by Ayrshire gutter cleaners. 
               We remove leaves, debris, moss, and blockages to prevent water damage and maintain proper drainage.
             </p>
             

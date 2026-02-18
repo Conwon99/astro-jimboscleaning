@@ -76,8 +76,8 @@ const RenderSoftwashing = () => {
               Render Softwashing in Ayrshire
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Gentle softwashing for render surfaces, removing stains and organic growth without damage. 
-              Professional cleaning that restores your property's appearance safely and effectively.
+              Render softwashing specialists providing render cleaning Ayrshire and softwash render cleaning Ayr. 
+              Expert stain removal from render surfaces without damage. Professional soft washing services that restore your property's appearance safely and effectively.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

@@ -68,12 +68,57 @@ const Header = () => {
             >
               Home
             </button>
-            <button 
-              onClick={() => handleNavigation('services')}
-              className="text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors"
-            >
-              Services
-            </button>
+            <div className="relative group">
+              <button 
+                onClick={() => handleNavigation('services')}
+                className="text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors flex items-center"
+              >
+                Services
+                <svg className="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[9999]">
+                <div className="py-2">
+                  <a 
+                    href="/services/roof-steam-cleaning"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#526bb0] font-manrope font-normal transition-colors"
+                  >
+                    Roof Steam Cleaning
+                  </a>
+                  <a 
+                    href="/services/render-softwashing"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#526bb0] font-manrope font-normal transition-colors"
+                  >
+                    Render Softwashing
+                  </a>
+                  <a 
+                    href="/services/driveway-cleaning"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#526bb0] font-manrope font-normal transition-colors"
+                  >
+                    Driveway Cleaning
+                  </a>
+                  <a 
+                    href="/services/gutter-cleaning"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#526bb0] font-manrope font-normal transition-colors"
+                  >
+                    Gutter Cleaning
+                  </a>
+                  <a 
+                    href="/services/pvc-white-cleaning"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#526bb0] font-manrope font-normal transition-colors"
+                  >
+                    PVC White Cleaning
+                  </a>
+                  <a 
+                    href="/services/window-cleaning"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#526bb0] font-manrope font-normal transition-colors"
+                  >
+                    Window Cleaning
+                  </a>
+                </div>
+              </div>
+            </div>
             <button 
               onClick={() => handleNavigation('process')}
               className="text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors"

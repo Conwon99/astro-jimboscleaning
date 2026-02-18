@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto max-w-5xl">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center mb-4">
               <LazyImage 
@@ -17,7 +17,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-400 font-manrope">
-              Expert exterior cleaning services across Ayrshire and outer Glasgow. Roofs, render, driveways, gutters, PVC, and more—safe, effective, and reliable.
+              Expert roof cleaning services across Ayrshire and outer Glasgow. Professional exterior cleaning services Ayrshire, house exterior cleaning, commercial exterior cleaning, home exterior maintenance Ayrshire, property cleaning services, and Ayrshire pressure washing company. Roofs, render, driveways, gutters, PVC, and more—safe, effective, and reliable.
             </p>
           </div>
           
@@ -36,6 +36,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-manrope font-normal mb-4">Service Areas</h4>
             <ul className="space-y-2 text-gray-400 font-manrope">
+              <li><a href="/locations" className="hover:text-white transition-colors font-medium text-white">All Locations</a></li>
               <li><a href="/locations/irvine" className="hover:text-white transition-colors">Irvine</a></li>
               <li><a href="/locations/ayr" className="hover:text-white transition-colors">Ayr</a></li>
               <li><a href="/locations/troon" className="hover:text-white transition-colors">Troon</a></li>
@@ -46,6 +47,25 @@ const Footer = () => {
               <li className="text-gray-500">Sat: 9:00 AM - 4:00 PM</li>
             </ul>
           </div>
+        </div>
+        
+        <div className="mb-8">
+          <h4 className="text-lg font-manrope font-normal mb-4">Find Us</h4>
+          <div className="w-full h-64 rounded-lg overflow-hidden border border-gray-700">
+            <iframe
+              src="https://www.google.com/maps?q=2+West+Bowhouse+Way,+Irvine,+Ayrshire,+United+Kingdom&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Jimbo's Exterior Cleaning Location - 2 West Bowhouse Way, Irvine"
+            ></iframe>
+          </div>
+          <p className="text-gray-400 font-manrope text-sm mt-2">
+            2 West Bowhouse Way, Irvine, Ayrshire, United Kingdom
+          </p>
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">

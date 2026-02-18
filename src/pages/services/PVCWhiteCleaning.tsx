@@ -76,8 +76,8 @@ const PVCWhiteCleaning = () => {
               PVC White Cleaning in Ayrshire
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Restore the shine to your PVC fascias, soffits, and gutters with our specialist cleaning. 
-              We remove dirt, grime, and discoloration to bring back the original white finish.
+              PVC white cleaning specialists offering PVC fascias cleaning Troon, PVC soffit cleaning Ayr, and PVC gutters cleaning. 
+              Professional fascia and soffit cleaning and PVC restoration service. We remove dirt, grime, and discoloration to bring back the original white finish.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

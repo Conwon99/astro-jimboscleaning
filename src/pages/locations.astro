@@ -1,0 +1,20 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import LocationsContent from './Locations';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+---
+
+<Layout 
+  title="Service Areas - Ayrshire & Glasgow | Jimbo's Exterior Cleaning"
+  description="Professional cleaning services in Irvine, Ayr, Troon, Prestwick, Kilmarnock, and outer Glasgow. Cleaning services in Irvine, cleaning services in Ayr, cleaning services in Troon, and Ayrshire and Glasgow cleaning. Expert roof cleaning and exterior cleaning services Ayrshire."
+  canonical="/locations"
+>
+  <TooltipProvider client:load>
+    <Toaster client:load />
+    <Sonner client:load />
+    <LocationsContent client:load />
+  </TooltipProvider>
+</Layout>
+

@@ -8,12 +8,12 @@ interface Props {
 
 const {
   title = "Jimbo's Exterior Cleaning - Ayrshire",
-  description = "Expert exterior cleaning services in Ayrshire: roof steam cleaning, render softwashing, driveway, gutter, PVC, and window cleaning.",
-  canonical = "https://jimboscleaning.co.uk/",
+  description = "Expert roof cleaning services in Ayrshire and Glasgow. Professional exterior cleaning services Ayrshire, house exterior cleaning, commercial exterior cleaning, home exterior maintenance Ayrshire, property cleaning services, and Ayrshire and Glasgow cleaning.",
+  canonical = "https://jimboscleaning.com/",
   image = "/lovable-uploads/logo.webp",
 } = Astro.props;
 
-const fullCanonical = canonical.startsWith('http') ? canonical : `https://jimboscleaning.co.uk${canonical}`;
+const fullCanonical = canonical.startsWith('http') ? canonical : `https://jimboscleaning.com${canonical}`;
 ---
 
 <!doctype html>
@@ -52,6 +52,7 @@ const fullCanonical = canonical.startsWith('http') ? canonical : `https://jimbos
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={fullCanonical} />
     <meta property="og:image" content={image} />
     <meta property="og:image:type" content="image/webp" />
 
@@ -77,8 +78,8 @@ const fullCanonical = canonical.startsWith('http') ? canonical : `https://jimbos
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Jimbo's Exterior Cleaning",
-      "description": "Expert exterior cleaning services in Ayrshire: roof steam cleaning, render softwashing, driveway, gutter, PVC, and window cleaning.",
-      "url": "https://jimboscleaning.co.uk",
+      "description": "Expert roof cleaning services in Ayrshire: roof steam cleaning, render softwashing, driveway, gutter, PVC, and window cleaning.",
+      "url": "https://jimboscleaning.com",
       "telephone": "+447919270128",
       "address": {
         "@type": "PostalAddress",
@@ -107,7 +108,7 @@ const fullCanonical = canonical.startsWith('http') ? canonical : `https://jimbos
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Exterior Cleaning Services",
+        "name": "Roof Cleaning Services",
         "itemListElement": [
           {
             "@type": "Offer",
@@ -171,5 +172,6 @@ const fullCanonical = canonical.startsWith('http') ? canonical : `https://jimbos
 <style is:global>
   @import '../index.css';
 </style>
+
 
 
